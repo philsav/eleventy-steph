@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
 
+
+    eleventyConfig.addWatchTarget("./src/sass")
     eleventyConfig.addPassthroughCopy("./src/css")
+
 
     eleventyConfig.addFilter("randomItem", (arr) => {
         arr.sort(() =>{
